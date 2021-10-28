@@ -30,13 +30,17 @@ main {
 }
 
 button {
-    border-radius: 15px;
-    height: 2rem;
+    height: 2.0rem;
     background-image: linear-gradient(to right,hsla(136, 65%, 51%,0.8), hsla(192, 70%, 51%,0.8));
     color: white;
     border: none;
+    border-radius: 30px;
     width: 200px;
     font-weight: 600;
+}
+
+button:active {
+    transform: scale(.98);
 }
 
 .top-section {
@@ -51,12 +55,14 @@ button {
     flex-direction: column;
     width: 50%;
     padding: 4rem;
+    padding-top: 0rem;
     text-align: left;
     justify-content: center;
 }
 
 .top-left p {
     padding-left: 0px;
+    width: 50%;
 }
 
 .top-img {
@@ -77,8 +83,13 @@ button {
     flex-direction: column;
     padding:4rem;
     padding-top: 0px;
+    padding-bottom: 0px;
     padding-bottom: opx;
     width: 100%;
+}
+
+.mid-top p {
+    width: 30%;
 }
 
 .mid-card {
@@ -88,28 +99,42 @@ button {
     padding: 4rem;
 }
 
+mid-car article h3, p{
+    width: 50%;
+}
+
 .low-tittle {
     padding: 4rem;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .low-card {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 4rem
+    justify-content: space-evenly;
+    padding: 2rem
 }
 
 .low-card-item {
-    background-color: gray;
+    background-color: white;
     border-radius: 5px;
     margin: 2rem;
 }
 
-.low-card-item h3, h6, p {
-    padding:1.5rem;
+.low-card-item h3, h6 {
+    width: 80%;
+    padding-left: 10px;
+    padding-bottom: 1rem;
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: left;
+}
+
+.low-card-item p {
+    margin-right: 0px;
+    width: 100%;
+    padding-left: 10px;
 }
 
 .low-card-item img {
@@ -136,6 +161,13 @@ footer {
     flex-direction: row;
     justify-content: center;
     list-style: none;
+}
+
+.list-footer a{
+    color: white;
+    align-items: flex-start;
+    padding-left: 0px;
+    margin-left: 0px;
 }
 
 .terms {
